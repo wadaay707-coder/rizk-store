@@ -1,18 +1,1 @@
-import type { NextConfig } from "next";
-
-const nextConfig: NextConfig = {
-  reactStrictMode: true,
-  images: {
-    remotePatterns: [
-      {
-        protocol: "https",
-        hostname: "**",
-      },
-    ],
-  },
-  eslint: {
-    ignoreDuringBuilds: false,
-  },
-};
-
-export default nextConfig;
+import type { NextConfig } from "next";\n\nconst nextConfig: NextConfig = {\n  reactStrictMode: true,\n  images: {\n    remotePatterns: [\n      {\n        protocol: "https",\n        hostname: "**",\n      },\n    ],\n  },\n};\n\nexport default nextConfig;\n
